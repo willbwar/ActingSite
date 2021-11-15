@@ -18,10 +18,11 @@ img {
   width: 455.5px;
   height: 686px;
 }
+
 /* Media */
 .media {
-  background-color: #2E2D2D;
-  height: 100vh;
+  background-color: #2e2d2d;
+  height: auto;
   width: 100%;
   color: white;
 }
@@ -78,7 +79,7 @@ img {
 
 /* Landing */
 .landing {
-  background-image: url(/img/landing.jpg);
+  background-image: url(/img/landing-display.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -136,7 +137,7 @@ img {
   flex-direction: column;
   align-items: center;
   font-family: brother-1816;
-  background-image: url(/img/grandlake.png);
+  background-image: url(/img/grandlake-display.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -183,6 +184,10 @@ img {
 }
 .footer ul {
   margin-right: 10px;
+}
+.footer img {
+  height: 20px;
+  width: auto;
 }
 
 /* Contact Other Styling in reset.css at bottom*/
