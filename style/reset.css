@@ -108,7 +108,8 @@ input, select {
 div#main{
 width: 50%;
 height: 500px;
-font-family: brother-1816;
+font-family: 'brother-1816', sans-serif;
+
 }
 div#form_sample{
 text-align:center;
@@ -154,7 +155,7 @@ border-radius: 20px;
 color:#fff;
 font-size: 18px;
 cursor:pointer;
-font-family: brother-1816;
+font-family: 'brother-1816', sans-serif;
 }
 
 input[type="submit"]:hover{
