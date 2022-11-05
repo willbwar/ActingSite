@@ -74,6 +74,22 @@ img {
   border: 2px solid white;
 }
 
+.media-section {
+    width: 80%;
+    height: 50vh;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.media-container iframe {
+  width: 80vh;
+  height: 40vh;
+}
+
 .h1 {
   font-size: 48px;
   font-family: 'Zen Antique', serif;
@@ -261,6 +277,15 @@ img {
     justify-content: space-around;
     align-items: center;
   }
+
+  .media-section {
+      flex-direction: column;
+  }
+.media-container iframe {
+  width: 100%;
+  height: 120%;
+}
+
  .home-link {
    display: none;
  }
