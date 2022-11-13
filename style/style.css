@@ -226,6 +226,12 @@ img {
   align-items: baseline;
   height: 100vh;
 }
+
+.contactform {
+  height: 100vh;
+  width: 100vh;
+}
+
 /*Mobile*/
 
 @media (max-width: 767px) {
