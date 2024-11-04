@@ -1,47 +1,496 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Will Warner – Actor</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="image.ico" href="img/favicon-16.png">
-  <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" href="style/reset.css">
-  <link rel="stylesheet" href="https://use.typekit.net/uua6lcy.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@100&family=Zen+Antique&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor&display=swap">
+  <script src="script.js" defer></script>
+
+  <title>Will Warner - Actor</title>
+  <link rel="icon" type="image/x-icon" href="photos/favicon.png">
 </head>
-<script src="main.js"></script>
 
 <body>
-  <div class="landing" id="landing-image">
 
-    <div class="nav">
-      <h2><a href="index.html">WILL WARNER</a></h2>
-      <ul>
-        <li><a class="home-link" href="index.html">Home</a></li>
-        <li><a href="media.html">Media</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
+  <div class="dot-bar">
+    <!-- Dot elements will be added here dynamically -->
+  </div>
+
+
+  <main>
+
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="logo">
+        <img id="logo" src="photos/logo-white.png" alt="Logo">
+      </div>
+      <ul class="nav-items">
+        <li id="navitem"><a href="#reels">Reels</a></li>
+        <li id="navitem"><a href="#gallery">Gallery</a></li>
+        <li id="navitem"><a href="#resume">Experience</a></li>
+        <li id="navitem"><a href="#contact">Contact</a></li>
       </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about-me">
+      <img src="photos/header-graybackground.png" alt="Will Warner">
+      <div class="overlay fade-in">
+        <h2>About Will</h2>
+        <p>Will Warner, a seasoned actor with a BFA from the University of Oklahoma, seamlessly blends his passion for improv and sketch comedy with meticulous character preparation and a versatile range of on-camera and stage skills. He brings
+          compelling, dynamic, and meaningful characters to life. Off-set, Will enjoys reading, hiking, cooking, and diving into the culinary challenges of Julia Child's cookbooks.</p>
+      </div>
+    </section>
+
+    <hr class="solid">
+
+    <!-- Reels Section -->
+    <section id="reels" class="fade-in">
+      <h2>Reels</h2>
+      <div class="video-grid">
+        <!-- Include video embed codes or links to your videos -->
+        <!-- Video 1 -->
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/txbrZurcLfY?si=9P6cS3aY6gf-KXmY" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <!-- Audio Clip 2 -->
+        <!-- <div class="mp3-player">
+          <audio controls>
+            <source src="files/WayDownWeGo.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div> -->
+        <!-- Video 3 -->
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/6IOAEv4uGAM?si=iI6G44aY9KlXR-eP" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+
+        <!-- Video 4 -->
+        <!--
+                <div class="video">
+                    <iframe src="https://player.vimeo.com/video/87110435?h=f253e737bd" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!-- Video 5 -->
+        <!--
+                <div class="video">
+                    <iframe src="https://player.vimeo.com/video/87110435?h=f253e737bd" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div> -->
+        <!-- Video 6 -->
+        <!--
+                <div class="video">
+                    <iframe src="https://player.vimeo.com/video/87110435?h=f253e737bd" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                -->
+      </div>
+    </section>
+
+    <hr class="solid">
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="fade-in">
+      <div class="resume-entry">
+        <div class="resume-header">
+          <h2>Gallery</h2>
+          <a href="files/will-warner-headshots.zip" download="will-warner-headshots.zip" target="_blank">
+            <button class="download-button">Download Headshots</button>
+          </a>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery">
+            <img src="photos/headshot1.png" alt="Will Warner smiling">
+            <img src="photos/headshot2.png" alt="Will Warner straight-faced">
+            <img src="photos/headshot3.png" alt="Will Warner smiling with glasses">
+            <img src="photos/headshot4.png" alt="Will Warner with raised eyebrows">
+            <img src="photos/headshot5.png" alt="Will Warner with a mustache">
+            <img src="photos/headshot1.png" alt="Will Warner smiling">
+            <img src="photos/headshot2.png" alt="Will Warner straight-faced">
+            <img src="photos/headshot3.png" alt="Will Warner smiling with glasses">
+            <img src="photos/headshot4.png" alt="Will Warner with raised eyebrows">
+            <img src="photos/headshot5.png" alt="Will Warner with a mustache">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="solid">
+
+    <!-- Resume Section -->
+    <!-- <h2>Resume</h2> -->
+    <section id="resume" class="fade-in">
+      <div class="resume-entry">
+        <div class="resume-header">
+          <h2>Film & TV</h2>
+          <a href="files/WillWarnerFilmResume.pdf" download="Isabella-Colosimo-Resume-2024.pdf" target="_blank">
+            <button class="download-button">Download Resume</button>
+          </a>
+        </div>
+        <div class="resume-content">
+          <table>
+            <tr class="table-row">
+              <td>Killers of the Flower Moon</td>
+              <td>SAG Feature</td>
+              <td>Jesse Plemons Stand-In</td>
+              <td>Martin Scorsese</td>
+              <td><button class="toggle-button">+</button></td>
+            </tr>
+            <tr class="hidden-row">
+              <td colspan="4">
+                Will Warner shadowed Jesse Plemons for every day of production, serving as his stand-in for the duration of shooting. This position gave Will experience working on the largest budget set in the world at time of shooting. He made the
+                most of this opportunity by engaging with the script each day, executing precise blocking and studying the processes of the best actors in the world up close.
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>Reagan</td>
+              <td>SAG Feature</td>
+              <td>Regular Stand-In</td>
+              <td>Sean McNamara</td>
+              <td><button class="toggle-button">+</button></td>
+            </tr>
+            <tr class="hidden-row">
+              <td colspan="4">
+                In this production, Will stood in for a variety of Male roles, including Reagan, portrayed by Dennis Quaid. Stepping into a wide variety of scenes, characters, and locations provided invaluable experience with camera blocking,
+                standard practices for actor’s on professional set, and flexibility to fill needs at a moment’s notice.
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>SHOWCASE</td>
+              <td>SAG-Short</td>
+              <td>Supporting</td>
+              <td>Collin Colaizzi</td>
+              <td><button class="toggle-button">+</button></td>
+            </tr>
+            <tr class="hidden-row">
+              <td colspan="4">
+                In a third production by Collin Colaizzi, Will was tasked with transfixing audiences in the opening moments of the movie. He wrote an original musical theatre ballad, combining his abilities as an actor with his writing and singing
+                expertise.
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>Strangers May Kiss</th>
+              <td>Feature</th>
+              <td>Supporting</th>
+              <td>Colin Colaizzi</th>
+              <td><button class="toggle-button">+</button></td>
+            </tr>
+            <tr class="hidden-row">
+              <td colspan="4">
+                <!-- img src="photos/headshot1.png" alt="More Information" class="info-image" -->
+                In his second film with Colaizzi, Will returns as a college freshman sharing his disillusionment and wisdom with his younger friends, who, following his advice, engage in reckless behavior that destroys their fragile relationships.
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>God Loves Us When We Dance</td>
+              <td>Short</td>
+              <td>Supporting</td>
+              <td>Emma Woodward</td>
+              <td><button class="toggle-button">+</button></td>
+            </tr>
+            <tr class="hidden-row">
+              <td colspan="4">
+                Portraying an opportunistic, software student from a prestigious east-coast school, Will excels in this sci-fi romance exploring emerging technologies and their disconnect from real-world consequences.
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>C'mon Cowboy Cry</td>
+              <td>Short</td>
+              <td>Lead</td>
+              <td>Carson Sanders</td>
+              <td><button class="toggle-button">+</button></td>
+            </tr>
+            <tr class="hidden-row">
+              <td colspan="4">
+                Will brought to life a young cowboy, struggling with a failing marriage in this drama about two people who fell in love before their time, and now seek to extricate themselves from one another. His performance alongside Cinematography
+                by Grayson Harjo, tells a heartfelt Oklahoma tale about young marriages, grief, and recuperation.
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>Off The Face of the Earth</td>
+              <td>Short</td>
+              <td>Lead</td>
+              <td>Alejandro Padilla</td>
+              <td><button class="toggle-button">+</button></td>
+            </tr>
+            <tr class="hidden-row">
+              <td colspan="4">
+                Playing a young man trying to convince his sister to return home she ran away years earlier, Will plays across from Avery Baker in this heartfelt story about a broken family.
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>Jumping Off Point</td>
+              <td>Short</td>
+              <td>Lead</td>
+              <td>Andrew Olsen</td>
+              <td><button class="toggle-button">+</button></td>
+            </tr>
+            <tr class="hidden-row">
+              <td colspan="4">
+                This modern parable challenged Will with the portrayal of a young but recovering alcoholic working to regain himself and his life when confronted with the shock of a baby on the way.
+              </td>
+            </tr>
+
+            <tr class="table-row">
+              <td>McDonald's Man</td>
+              <td>Short</td>
+              <td>Lead</td>
+              <td>Collin Colaizzi</td>
+              <td><button class="toggle-button">+</button></td>
+            </tr>
+            <tr class="hidden-row">
+              <td colspan="4">
+                In his first film with director Collin Colaizzi, Will plays the titular antagonist in this high school comedy about a bully who challenges his victim to an eating competition.
+              </td>
+            </tr>
+
+
+
+          </table>
+        </div>
+      </div>
+      <div class="resume-entry">
+        <div class="resume-header">
+          <h2>Theater</h2>
+        </div>
+        <div>
+          <table>
+
+            <tr class="table-row">
+              <td>Burnt Toast Sketch Show</th>
+              <td>Performer/Writer</th>
+              <td>Frigid NY</th>
+              <td>Emma Woodward & Sarah Santamaria</th>
+              <td><button class="toggle-button">+</button></td>
+            </tr>
+            <tr class="hidden-row">
+              <td colspan="4">
+                As a founding member of the Burnt Toast Company, will built upon earlier comedy experience and takes to the stage every other month in New York with a completely original show that has thrilled sold-out crowds since its creation in
+                2023. More recently, the show has shifted into digital spaces as well on YouTube, Instagram, and TikTok.
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>A Midsummer Night's Dream</th>
+              <td>Theseus</th>
+              <td>Weitzenhoffer Theatre</th>
+              <td>Judith Pender</th>
+              <td><button class="toggle-button">+</button></td>
+            </tr>
+            <tr class="hidden-row">
+              <td colspan="4">
+                In Shakespeare’s classic comedy. Will set the lovers out on their journey and brings them back to Athens. Embodying this character involved presence, leadership, and a command of heightened language to clearly convey the comedic
+                themes of the show.
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>The Trial</th>
+              <td>Dr. Grace</th>
+              <td>Gilson Lab Theatre</th>
+              <td>Joe Alberti</th>
+              <td><button class="toggle-button">+</button></td>
+            </tr>
+            <tr class="hidden-row">
+              <td colspan="4">
+                This character, based on Dr. Huld in Kafka’s original novel, was the culmination of a year-long writing process where Will worked alongside translator, Bob Lemon, and Head Writer/Director, Joe Alberti. The character provided the much
+                needed comedic relief in an otherwise dark and twisted examination of the bureaucratic systems that confine and subdue modern man.
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>Scapino!</th>
+              <td>Waiter - Swing: Ottavio & Sylvestro</th>
+              <td>Gilson Lab Theatre</th>
+              <td>Judith Pender</th>
+              <td><button class="toggle-button">+</button></td>
+            </tr>
+            <tr class="hidden-row">
+              <td colspan="4">
+                In Frank Dunlop’s adaptation, Will explored Commedia Dell'arte and clowning work to portray a waiter and both of the young lovers who he understudied. This work led him to discover a love for bold character creation that extends into
+                his current comedic work.
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>Blood Wedding</th>
+              <td>Young Man - Swing: The Groom, Leonardo </th>
+              <td>Weitzenhoffer Theatre</th>
+              <td>Sara Guerrero</td>
+              <td><button class="toggle-button">+</button></td>
+            </tr>
+            <tr class="hidden-row">
+              <td colspan="4">
+                In this adaptation with original music accompanying Lorca’s poems, Will led the tenor section and served as a swing for the two leading male parts. He also served as the fight captain, maintaining the integrity and safety of the stage
+                combat and running fight calls before performances.
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>A Christmas Carol</th>
+              <td>Ensemble - Understudy</th>
+              <td>Brackett Stage</th>
+              <td>Tom Orr</td>
+              <td><button class="toggle-button">+</button></td>
+            </tr>
+            <tr class="hidden-row">
+              <td colspan="4">
+                Will memorized the tracks of 9 male characters in the play, prepared alongside his own ensemble work, to step in at any time to cover each track.
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>30 Second Plays Sketch Comedy</td>
+              <td>Performer/Writer</td>
+              <td>OU Studio 317</td>
+              <td>Sarah Santamaria</td>
+              <td><button class="toggle-button">+</button></td>
+            </tr>
+            <tr class="hidden-row">
+              <td colspan="4">
+                In his first foray into sketch writing, Will joined the group as a writer and performer, his sketches focused on character-based comedy and examinations of popular culture.
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>The Boy and the Bear</th>
+              <td>Boy</th>
+              <td>Gilson Lab Theatre - Virtual</th>
+              <td>Michael Darmon</th>
+              <td><button class="toggle-button">+</button></td>
+            </tr>
+            <tr class="hidden-row">
+              <td colspan="4">
+                Performing during Covid led to a unique theatre experience as Will navigated the unexpected constraints of a global pandemic. The heartfelt show provided a bright spot in a dark time.
+              </td>
+            </tr>
+
+          </table>
+        </div>
+      </div>
+      <div class="resume-entry">
+        <div class="resume-header">
+          <h2>Training</h2>
+        </div>
+        <div>
+          <table>
+            <tr class="table-row">
+              <td>BFA: Drama</th>
+              <td>University of Oklahoma</th>
+              <td>Emphasis in Acting & Dramaturgy - Minor in English Writing</th>
+              <td><button class="toggle-button">+</button></td>
+            </tr>
+            <tr class="hidden-row">
+              <td colspan="4">
+                <strong>Coursework:
+                  <ul>
+                    <li></strong>Acting, <i>Alissa Branch & Judith Pender</i></li>
+                <li> Improv for the Actor, <i>Madison Niederhauser</i></li>
+                <li> Voice & Movement, <i>Joe Alberti & Genoa Davidson</i></li>
+                <li> Acting for the Camera, <i>Daryl Cox</i> </li>
+                <li> Auditioning for Film and Television, <i>Chris Freihofer, CSA</i></li>
+                <li> Stage Combat Workshop, <i>Kriss Kuss</i>.</li>
+                </ul>
+
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>Dramatic Improv</th>
+              <td>David Garelik</th>
+              <td>Brooklyn, NY</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="resume-entry">
+        <div class="resume-header">
+          <h2>Skills</h2>
+        </div>
+        <div>
+          <table>
+            <tr class="table-row">
+              <td>Dialects</th>
+              <td>Texas - Southern - Irish - Scottish - New York - Boston - RP - Cockney</th>
+            </tr>
+            <tr class="table-row">
+              <td>Special Skills</th>
+              <td>Driver's License - Improv - Singing - Guitar - Bouldering - Basic Tumbling - Lacrosse - Competitive Swimming - Spanish (Conversational)</th>
+            </tr>
+            <tr class="table-row">
+              <td>Fight/Weapons</th>
+              <td>Wrestling (6 years) - Firearms Experience - Historical Fencing (HEMA)</th>
+            </tr>
+            <tr class="table-row">
+              <td>Dance</th>
+              <td>Ballroom, Swing, Period Dance, Basic Ballet, Basic Modern</th>
+            </tr>
+
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+    <hr class="solid">
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-container">
+        <div class="contact">
+          <p><strong>
+              Contact Will today to discuss how his skills and services can bring your creative vision to life.
+            </strong></p>
+          <!-- Google Form Embed -->
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfqaCah4zuH6Lpz-5Sch88BlF4agYh6qdBYI7CBHqwbbAJ0ig/viewform?embedded=true" width="640" height="740" frameborder="0" marginheight="0" marginwidth="0">Loading…
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!--     OLD CONTACT FORM DESIGN W/O GOOGLE
+
+<section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <div class="contact">
+                <p><strong>
+                   Contact Will today to discuss how his skills and services can bring your creative vision to life.
+                </strong></p>
+                               <form action="https://formspree.io/f/myyryzbp" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section> -->
+
+  </main>
+
+  <footer>
+    <div class="footerlogo">
+      <img id="footerlogo" src="photos/logo-white.png" alt="Logo">
     </div>
+    <div class="social-media-icons">
+      <a href="https://app.castingnetworks.com/talent/public-profile/6fe10ca4-b1e5-11ec-854e-431e76b1fccb"><img src="photos/castingnetworks.png" alt="Casting Networks"></a>
+      <a href="https://resumes.actorsaccess.com/1718324-4918423"><img src="photos/actorsacess.jpeg" alt="Actors Access" target="_blank"></a>
+    </div>
+    <div class="footer-copyright">
+      &copy; 2024 Designed by Will Warner
+    </div>
+  </footer>
+
+  <div class="dot-navigation-overlay">
+    <div class="dot" data-target="about-me"></div>
+    <div class="dot" data-target="reels"></div>
+    <div class="dot" data-target="gallery"></div>
+    <div class="dot" data-target="resume"></div>
+    <div class="dot" data-target="contact"></div>
   </div>
 
-  <div class="about">
-    <h2>About Will</h2>
-    <p>Will Warner is an experienced actor with his BFA from the University of Oklahoma. A lover of improv and sketch comedy, Will brings in-the-moment choices to his work alongside meticulous character preparation and a deep knowledge of on-camera
-      and stage techniques. Will creates characters that tell compelling and important stories while keeping the production and the process fun and creative. When not working on a role, Will enjoys reading, hiking and cooking. He is currently working
-      through Julia Child's cookbooks!
-    </p>
-  </div>
-  <div class="footer">
-    <h3>Website Designed by <a href="#">Will Warner</a></h3>
-    <a href="https://resumes.actorsaccess.com/1718324-4918423" target="_blank"><img src="img/aa.png" alt="Actors Access"></a>
-    <a href="https://app.castingnetworks.com/talent/public-profile/6fe10ca4-b1e5-11ec-854e-431e76b1fccb" target="_blank"><img src="img/cn.svg" alt="Casting Networks"></a>
-
-  </div>
 </body>
 
 </html>

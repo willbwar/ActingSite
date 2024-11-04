@@ -1,0 +1,561 @@
+/* Fonts */
+body {
+    font-family: 'Lato', Arial, sans-serif; /* Lato for the body */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Actor', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Actor font for headers */
+}
+
+header, nav, nav a {
+    font-family: 'Actor', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Actor font for header and navigation */
+}
+
+#about-me, #about-me h2, #about-me p {
+    font-family: 'Lato', Arial, sans-serif; /* Lato for the About Me section */
+}
+
+#gallery, #reels, #resume, #my-work, #contact, main h2, main p {
+    font-family: 'Lato', Arial, sans-serif; /* Lato for other sections */
+}
+
+main {
+    margin: 0;
+}
+
+/* CSS for the fade-in animation */
+.fade-in {
+  opacity: 0; /* Start with an opacity of 0 (completely transparent) */
+  transform: translateY(20px); /* Optionally, you can add a subtle upward translation */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Add a transition for smoother animation */
+}
+
+/* Apply the animation to specific elements within your sections */
+#about-me .overlay,
+#reels,
+#gallery,
+#resume,
+#contact .contact-container {
+  animation: fadeIn 1s ease 0.5s both; /* Apply the animation to these elements */
+}
+
+/* Define the keyframes for the fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Style for dot navigation overlay */
+.dot-navigation-overlay {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 999;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #333;
+  border-radius: 50%;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+/* Style for the active dot */
+.active-dot {
+  background-color: darkred; /* Change this color as desired */
+}
+
+.download-button {
+    border: 2px solid red;
+    color: black;
+    background-color: #fff;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin: 4px 30px; /* Add margin to the left and right */
+}
+
+.download-button:hover {
+    background-color: darkred;
+    color: white;
+}
+
+.resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid red;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+h2 {
+    margin-left: 20px;
+    padding-top: 20px;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 4px;
+    margin-bottom: 10px; /* Adjust as needed */
+    font-size: 32px;
+    padding: 0 20px;
+}
+
+.overlay h2 {
+    margin-left: 0px;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+.nav-items {
+    display: flex;
+    justify-content: flex-end;
+    font-size:18px;
+    
+}
+
+
+
+/* Navigation bar styles */
+nav {
+     position: absolute;
+    width: 100%;
+    background-color: transparent; /* Or any other styling */
+    z-index: 10; /* Ensure it's on top */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+
+
+nav:hover {
+    background-color: rgb(255 255 255 / 70%);
+    color: black;
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+
+}
+
+nav:hover .nav-items{
+    font-size:18px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+
+}
+
+nav:hover .logo{
+    content: url("photos/logo-black.png");
+    max-width: 150px;
+    margin-left: 15px;
+    margin-top: 6px;
+}
+
+nav:hover a {
+    color: black; /* Text turns black on hover */
+
+
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 30px; /* Adjusted the margin between navigation items */
+
+
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Black text color */
+    font-weight: bold;
+
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 4px;
+    color: #555555;
+}
+
+/* Logo styles */
+#logo {
+    max-width: 150px;
+    margin-left: 15px;
+     margin-top: 6px;
+
+}
+
+
+/* About Me section styles */
+#about-me {
+    position: relative;
+    text-align: left; /* Align text to the left */
+    color: #fff; /* Text color */
+}
+
+#about-me img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#about-me .overlay {
+    position: absolute;
+    top: 25%; /* Position from the top */
+    left: 0;
+    width: 45%; /* Adjusted width */
+    transform: translateY(-50%); /* Center the text vertically */
+    text-align: left; /* Align text to the left */
+    box-sizing: border-box;
+    padding: 20px; /* Add padding for better visibility */
+    margin-left: 20px;
+}
+
+#about-me h2 {
+    font-size: 36px;
+    padding: 0px;
+}
+
+.gallery-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.gallery-container::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+/* Gallery section styles */
+.gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.gallery img {
+    max-width: calc(20% - 10px); /* Adjust the width and margin accordingly for 5 columns */
+    height: auto;
+    flex: 0 0 auto;
+    margin: 5px;
+    margin-bottom: 10px; /* Adjust the margin between images */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Video grid styles */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio for videos */
+    overflow: hidden;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#resume {
+    display: flex;
+    flex-direction: column; /* Stack entries vertically */
+}
+
+
+
+
+/* Style the table */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+
+/* Style table data cells (td) */
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+tr {
+    border-bottom: 1px solid red;
+}
+
+/* Initially hide the hidden rows */
+.hidden-row {
+    display: none;
+
+}
+
+/* Style the content within the hidden row */
+.hidden-row td {
+    padding: 8px; /* Adjust the padding within the cells */
+    padding-left: 40px;
+}
+
+/* Style the toggle button */
+.toggle-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+/* The image in the description */
+.info-image {
+        width: 150px; /* Adjust the size as needed */
+        height: 150px; /* Adjust the size as needed */
+        margin-right: 10px; /* Space between the image and the text */
+        vertical-align: middle; /* Align the image with the text */
+    }
+
+
+/* Style the button when clicked */
+.toggle-button:focus {
+    outline: none;
+}
+
+.toggle-button:hover {
+    color: red;
+}
+
+
+/* Show the hidden row when its class is toggled to 'show-row' */
+.show-row {
+    display: table-row;
+    max-height: 500px;
+
+}
+
+/* Add spacing between sections */
+.resume-entry + .resume-entry {
+    margin-top: 20px;
+}
+
+/* Center the contact form on the page */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact iframe {
+    width: 100%; /* Make the form container full width */
+    height: 400px; /* Adjust the height as needed */
+    border: none; /* Remove default iframe border */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.contact {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid red;
+    border-radius: 4px;
+
+
+}
+
+.contact input,
+.contact textarea {
+    width: calc(100% - 24px); /* Adjust width and consider padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black
+    border-radius: 4px;
+    resize: none;
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.contact input[type="submit"] {
+     border: 2px solid red;
+    color: black;
+    background-color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+
+input[type="submit"]:hover {
+   background-color: darkred;
+    color: white;
+}
+
+
+
+
+
+/* MP3 player container */
+.mp3-player {
+    position: relative;
+    padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio for consistency */
+    overflow: hidden;
+    background-color: #f0f0f0; /* Set your desired background color */
+    border: 1px solid #ccc;   /* Add a border if desired */
+    border-radius: 8px;       /* Add rounded corners if desired */
+
+}
+
+/* Style the audio controls */
+.mp3-player audio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("photos/audioclip.png");
+    background-size: cover;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+.audio-thumbnail {
+  display: flex;
+  align-items: center; /* Center vertically */
+  gap: 10px; /* Space between image and audio player */
+}
+
+.audio-thumbnail img {
+  max-width: 100px; /* Adjust the size of the thumbnail as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Style the audio controls (you can further customize these styles) */
+.audio-thumbnail audio {
+  width: 100%; /* Fill the available width */
+}
+
+/* Style the social media icons container */
+.social-media-icons {
+    display: flex; /* Display icons horizontally */
+    justify-content: center; /* Center icons horizontally */
+    align-items: center; /* Center icons vertically */
+    gap: 10px; /* Adjust spacing between icons */
+    width: 100%; /* Ensure the container takes full width */
+    flex: 0 1 auto; /* Adjust social media icon size */
+}
+
+.social-media-icons a {
+    text-decoration: none; /* Remove underlines from icon links */
+    color: #fff; /* Set icon color */
+    font-size: 24px; /* Adjust icon size as needed */
+}
+
+/* Style individual social media icons (you can use your own image paths) */
+.social-media-icons img {
+    width: 30px; /* Adjust icon width as needed */
+    height: 30px; /* Adjust icon height as needed */
+}
+
+/* Footer styles */
+footer {
+    display: flex;
+    justify-content: space-between; /* Distribute items along the horizontal axis */
+    align-items: center; /* Center items vertically */
+    background-color: #2d2b2c; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding */
+    text-align: center;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+/* Style the logo container */
+#footerlogo {
+    text-align: left; /* Align the logo to the left */
+    max-width: 100px; /* Max width of the logo */
+     flex: 0 1 100px; /* Adjust logo size */
+}
+
+/* Style the copyright text container */
+.footer-copyright {
+    text-align: right; /* Align text to the right */
+    font-size: 12px; /* Font size */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+ 
+
+    max-width: 30%; /* Set a maximum width; adjust as necessary */
+}
+
+
+
+
+
+
+
+
+
